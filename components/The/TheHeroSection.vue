@@ -19,13 +19,19 @@ const prev = () => {
 }
 
 const next = () => {
-    currentIndex.value P 
+    currentIndex.value = (currentIndex.value + 1) % props.elements.length;
 }
-
 </script>
 
 <template>
-  <div>
-    
+  <div class="carousel">
+    <button @click="prev"></button>
+    <div
+        class="carousel-item"
+        :style="{ backgroundImage: `url(${currentElement.img})`}"
+    >
+    <h2>{{ currentElement.txt }}</h2>
+    <button @click="next"></button>
+    </div>
   </div>
 </template>
