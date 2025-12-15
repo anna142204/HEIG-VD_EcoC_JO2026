@@ -1,4 +1,5 @@
 <script setup>
+import TheHeroSection from '../components/The/TheHeroSection.vue';
 import TheTopBar from '../components/The/TheTopBar.vue';
 
 const topBarText = [
@@ -34,5 +35,8 @@ const topBarLinks = [
       :text="topBarText"
       :links="topBarLinks"
     />
+    <section>
+      <TheHeroSection/>
+    </section>
   </div>
 </template>
