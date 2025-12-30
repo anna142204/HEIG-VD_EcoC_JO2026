@@ -4,7 +4,7 @@ import BaseLinkCard from '../Base/BaseLinkCard.vue';
 const props = defineProps({
   title: {
     type: String,
-    default: "Titre section"
+    default: "Enjoy the games"
   }
 })
 

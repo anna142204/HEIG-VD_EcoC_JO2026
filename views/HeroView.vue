@@ -5,7 +5,7 @@ import heroElements from '../data/hero-content.json'
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col gap-5">
     <TheHeroSection
         :elements="heroElements"
     />

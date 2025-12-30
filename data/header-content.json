@@ -1,0 +1,36 @@
+{
+  "topBarText": [
+    "Jeux Olympiques d'hiver™ · Du 6 au 22 février 2026",
+    "Jeux Paralympiques d'hiver™ · Du 6 au 15 mars 2026"
+  ],
+  "topBarLinks": [
+    {
+      "txt": "Billetterie",
+      "src": "https://tickets.milanocortina2026.org/en/",
+      "icon": { "title": "lucide:ticket", "size": 24, "color": "inherit" },
+      "external": true
+    },
+    {
+      "txt": "Hospitalités",
+      "src": "https://olympics.com/fr/",
+      "icon": { "title": "lucide:bell", "size": 24, "color": "inherit" },
+      "external": true
+    },
+    {
+      "txt": "Boutique",
+      "src": "https://shop.olympics.com/en/",
+      "icon": { "title": "lucide:shopping-bag", "size": 24, "color": "inherit" },
+      "external": true
+    }
+  ],
+  "logoConfig": {
+    "src": "/images/mico-logo.webp",
+    "alt": "Milano Cortina 2026",
+    "url": "/"
+  },
+  "navItems": [
+    { "label": "Relais de la Flamme Olympique", "url": "/relais-de-la-flamme-olympique" },
+    { "label": "Calendrier", "url": "/calendrier" },
+    { "label": "Play & Win", "url": "/play-and-win" }
+  ]
+}
