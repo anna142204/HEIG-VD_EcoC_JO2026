@@ -18,6 +18,10 @@ const props = defineProps({
     icon: {
         type: Object,
         default: null
+    },
+    fontSize:{
+        type: String,
+        default: "18px"
     }
 })
 
@@ -47,11 +51,8 @@ const handleClick = () => {
   border-radius: 999px;
   border: none;
   cursor: pointer;
-  
-  /* Dégradé de base */
   background: linear-gradient(270deg, var(--color-green-50) 0%, var(--color-blue-50) 25%), var(--color-blue);
   
-  /* Texte */
   color: var(--color-white);
   font-family: var(--font-primary);
   font-size: 18px;
@@ -64,7 +65,6 @@ const handleClick = () => {
   background: linear-gradient(270deg, var(--color-green-70) 0%, var(--color-blue-70) 25%), var(--color-blue);
 }
 
-/* Version inversée (light) */
 .btn.inverted {
   background: var(--color-white);
   color: var(--color-blue);

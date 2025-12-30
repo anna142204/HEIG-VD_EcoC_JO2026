@@ -9,19 +9,15 @@ export default defineNuxtConfig({
     '~/assets/css/variables.css' 
   ],
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    ['@nuxt/icon', {
-        mode: 'svg', 
-        serverBundle: {
-          collections: ['lucide']
-        }
-    }],
-    ['@nuxt/image', {
-        format: ['webp'],
-        quality: 80,
-    }],
-  ],
+  modules: ['@nuxtjs/tailwindcss', ['@nuxt/icon', {
+      mode: 'svg', 
+      serverBundle: {
+        collections: ['lucide']
+      }
+  }], ['@nuxt/image', {
+      format: ['webp'],
+      quality: 80,
+  }], '@nuxt/icon'],
 
   postcss: {
     plugins: {
