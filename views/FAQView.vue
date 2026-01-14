@@ -2,25 +2,29 @@
 import { ref, computed } from 'vue';
 import faqQuestionsRaw from '../data/faq.json';
 import BaseFAQCard from '../components/Base/BaseFAQCard.vue';
+import BaseButton from '../components/Base/BaseButton.vue';
 
-const categories = [
-    "All Categories", 
-    "Milano Cortina 2026", 
-    "Jeux Olympiques"
-];
+const selectedCategory = ref(null);
 
-const activeCategory = ref("All Categories");
-
-const filteredQuestions = computed(() => {
-    if (activeCategory.value === "All Categories") {
-        return faqQuestionsRaw;
-    }
-    return faqQuestionsRaw.filter(q => q.category === activeCategory.value);
+const categories = computed(() => {
+  return [
+    ...new Set(
+      faqQuestionsRaw
+        .map(q => q.category)
+        .filter(Boolean)
+    )
+  ]
 });
 
-const setCategory = (category) => {
-    activeCategory.value = category;
-}
+const filteredFaqQuestions = computed(() => {
+  if (!selectedCategory.value) {
+    return faqQuestionsRaw
+  }
+
+  return faqQuestionsRaw.filter(
+    q => q.category === selectedCategory.value
+  )
+});
 </script>
 
 <template>
@@ -31,37 +35,35 @@ const setCategory = (category) => {
         <div class="w-full md:w-[50%] flex flex-col gap-6">
             
             <h2 class="font-[Poppins] font-bold text-[32px] text-[var(--color-dark-blue)] leading-tight">
-                Frequently Asked Questions
+                Questions posées fréquemment
             </h2>
 
             <div class="flex flex-wrap items-center gap-3">
-                <button
-                    v-for="category in categories"
-                    :key="category"
-                    @click="setCategory(category)"
-                    class="h-[45px] px-[20px] rounded-full flex items-center justify-center transition-all duration-300 font-[Poppins] text-[14px] font-medium whitespace-nowrap"
-                    :class="[
-                        activeCategory === category
-                            ? 'bg-[var(--color-blue)] text-[#F4F6F6]' 
-                            : 'bg-white text-[var(--color-blue)] border border-[#01647C]/20 hover:bg-[var(--color-light-green)]'
-                    ]"
-                >
-                    {{ category }}
-                </button>
+              <BaseButton
+                text="Toutes les catégories"
+                :inverted="selectedCategory === null ? false : true"
+                @click="selectedCategory = null"
+              />
+              <BaseButton
+                v-for="category in categories"
+                :text="category"
+                :inverted="category === selectedCategory ? false : true"
+                @click="selectedCategory = category"
+              />
             </div>
             
         </div>
 
         <div class="w-full md:w-[50%] flex flex-col gap-6">
             <BaseFAQCard
-                v-for="(faqQuestion, index) in filteredQuestions"
+                v-for="(faqQuestion, index) in filteredFaqQuestions"
                 :key="index"
                 :question="faqQuestion.question"
                 :answer="faqQuestion.answer"
                 :link="faqQuestion.link"
             />
             
-            <div v-if="filteredQuestions.length === 0" class="text-center py-10 opacity-60 font-[Poppins]">
+            <div v-if="filteredFaqQuestions.length === 0" class="text-center py-10 opacity-60 font-[Poppins]">
                 Aucune question trouvée.
             </div>
         </div>

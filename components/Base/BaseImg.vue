@@ -29,3 +29,26 @@ const props = defineProps({
     <div v-if="copyright" class="">{{ copyright }}</div>
   </div>
 </template>
+
+<style scoped>
+.truncated-border {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    clip-path: polygon(
+        0 0,
+        85% 0,
+        100% 100%,
+        0 100%
+    );
+
+}
+
+.truncated-border img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+    

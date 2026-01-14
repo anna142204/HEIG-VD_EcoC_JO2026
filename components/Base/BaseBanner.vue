@@ -7,10 +7,6 @@ const props = defineProps({
         type: String,
         required: true
     },
-    text: {
-        type: String,
-        required: true
-    },
     img: {
         type: Object,
         default: () => ({ src: '', alt: '' }),
@@ -32,29 +28,34 @@ const props = defineProps({
                 typeof button.icon.border === 'boolean'
             )
         }
-    },
-    flipped: {
-        type: Boolean,
     }
 })
 
 </script>
 
 <template>
-    <section :class="flipped ? 'flipped' : ''">
+    <section>
         <BaseImg
             :src="img.src"
             :alt="img.alt"
-            wrapperClass=""
+            wrapperClass="truncated-border"
             imgClass=""
         />
         <div>
-            <h2>{{ title }}</h2>
-            <p>{{ text }}</p>
+            <div>
+                <span>Presented by</span>
+                <BaseImg
+                    src="/images/presented_by.png"
+                    alt="sponsors"
+                    wrapperClass=""
+                    imgClass=""
+                />
+            </div>
+            <h3>{{ title }}</h3>
             <BaseButton
                 :text="button.text"
                 :url="button.url"
-                :inverted="button.inverted"
+                :inverted="true"
                 :icon="button.icon"
             />
         </div>
@@ -67,7 +68,9 @@ section {
     flex-direction: row;
 }
 
-.flipped {
-    flex-direction: row-reverse;
+section {
+  background: 
+    conic-gradient(from 90deg, rgba(1, 148, 130, 0.4) 0%, rgba(1, 100, 124, 0.4) 51%, rgba(1, 148, 130, 0.4) 100%),
+    var(--color-blue);
 }
 </style>

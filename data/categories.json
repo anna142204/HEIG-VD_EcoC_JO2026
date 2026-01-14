@@ -1,0 +1,74 @@
+[
+    {
+        "text": "Achetez vos billets",
+        "url": "https://tickets.milanocortina2026.org/en/?utm_medium=ioc_website&utm_source=olympics.com&utm_campaign=mico_gtweb",
+        "icon": {
+            "title": "lucide:ticket",
+            "size": 35
+        },
+        "external": true
+    },
+    {
+        "text": "Réserver votre séjour",
+        "url": "https://www.airbnb.com/widgets/events/mico2026?locale=en-GB&currency=EUR&c=.pi129.pkew_homepage_ioc",
+        "icon": {
+            "title": "simple-icons:airbnb",
+            "size": 35
+        },
+        "external": true
+    },
+    {
+        "text": "Hospitalité",
+        "url": "https://hospitality.milanocortina2026.org/en?utm_source=web&utm_medium=display&utm_campaign=int_ioc_mc26_web_nav",
+        "icon": {
+            "title": "lucide:concierge-bell",
+            "size": 35
+        },
+        "external": true
+    },
+    {
+        "text": "Boutique olympique",
+        "url": "https://shop.olympics.com/fr/?_s=bm-fi-olympic-shop-prtsite-GTWA-homepage-carousel-140925-am",
+        "icon": {
+            "title": "lucide:shopping-bag",
+            "size": 35
+        },
+        "external": true
+    },
+    {
+        "text": "Fan26",
+        "url": "https://www.olympics.com/fr/milano-cortina-2026",
+        "icon": {
+            "title": "lucide:gamepad-2",
+            "size": 35
+        },
+        "external": true
+    },
+    {
+        "text": "Compte",
+        "url": "https://www.olympics.com/fr/sign-in?origin=https://www.olympics.com/fr/milano-cortina-2026&template=mico-2026-gtwa&entry_point_tag=mico-2026&entry_point_type=action_collection",
+        "icon": {
+            "title": "lucide:user",
+            "size": 35
+        },
+        "external": false
+    },
+    {
+        "text": "Calendrier",
+        "url": "https://www.olympics.com/fr/milano-cortina-2026/schedule/overview",
+        "icon": {
+            "title": "lucide:calendar",
+            "size": 35
+        },
+        "external": false
+    },
+    {
+        "text": "Info spectateurs",
+        "url": "https://www.olympics.com/fr/milano-cortina-2026/sites",
+        "icon": {
+            "title": "lucide:info",
+            "size": 35
+        },
+        "external": false
+    }
+]

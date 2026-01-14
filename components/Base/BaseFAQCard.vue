@@ -28,7 +28,6 @@ const changeOpenState = () => {
 </script>
 
 <template>
-<<<<<<< HEAD
   <article 
     class="w-full bg-white rounded-[12px] p-[19px] flex flex-col gap-[10px] shadow-sm transition-all duration-300"
   >

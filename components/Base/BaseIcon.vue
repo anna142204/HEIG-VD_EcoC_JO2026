@@ -26,5 +26,16 @@ const props = defineProps({
         :style="{ color }"
         :aria-label="ariaLabel || title"
         role="img"
+        :class="border ? 'border' : ''"
     />
 </template>
+
+<style scoped>
+
+.border {
+    border-radius: 9999px;
+    transition: color 0.3s;
+    border: 1px solid white;
+    padding: 4px;
+}
+</style>

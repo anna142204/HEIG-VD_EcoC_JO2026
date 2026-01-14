@@ -1,15 +1,59 @@
 [
     {
-        "title": "",
-        "txt": "",
+        "title": "Réservez votre séjour pour les Jeux d'hiver™",
+        "text": "Réservez votre séjour avec Airbnb",
         "img": {
-            "src": "/images/article1.jpeg",
-            "alt": "Emily Harrop",
-            "copyright": "Getty Images"
+            "src": "/images/cta1.jpeg",
+            "alt": "Carte de Airbnb"
         },
-        "link": {
-            "href": "",
-            "alt": ""
-        }
+        "button": {
+            "text": "Réservez maintenant",
+            "url": "https://www.airbnb.com/s/Italy/homes?refinement_paths%5B%5D=%2Fhomes&search_type=DIRECT_REQUEST&c=.pi129.pkew_milano_cortina_ioc&checkin=2026-02-13&checkout=2026-02-15&date_picker_type=calendar&event_widget_code=mico2026&flexible_date_search_filter_type=2&place_id=ChIJA9KNRIL-1BIRb15jJFz1LOI&ne_lat=47.33731380408&ne_lng=12.358927012123&sw_lat=45.145918679216&sw_lng=9.103055606724&zoom=9.10622199036&zoom_level=9.10622199036",
+            "inverted": false,
+            "icon": {
+                "title": "ph:arrow-right",
+                "size": 32,
+                "color": "inherit"
+            }
+        },
+        "flipped": false
+    },
+    {
+        "title": "Les Jeux Paralympiques d'hiver",
+        "text": "Une célébration du courage, du talent et de l'inclusion. Les athlètes paralympiques redéfinissent les performances sur neige et glace.",
+        "img": {
+            "src": "/images/cta2.avif",
+            "alt": "Image d'un skieur"
+        },
+        "button": {
+            "text": "En savoir plus",
+            "url": "https://www.olympics.com/fr/milano-cortina-2026/jeux-paralympiques",
+            "inverted": false,
+            "icon": {
+                "title": "ph:arrow-right",
+                "size": 32,
+                "color": "inherit"
+            }
+        },
+        "flipped": false
+    },
+    {
+        "title": "Télécharger l'application des Jeux Olympiques™",
+        "text": "Votre place au premier rang pour Milano Cortina 2026",
+        "img": {
+            "src": "/images/cta3.avif",
+            "alt": "Application des JO"
+        },
+        "button": {
+            "text": "Télécharger maintenant",
+            "url": "https://www.olympics.com/fr/milano-cortina-2026/download-the-app",
+            "inverted": false,
+            "icon": {
+                "title": "ph:arrow-right",
+                "size": 32,
+                "color": "inherit"
+            }
+        },
+        "flipped": true
     }
 ]
