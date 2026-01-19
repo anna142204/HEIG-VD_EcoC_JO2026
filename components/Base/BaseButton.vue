@@ -22,7 +22,7 @@ const handleClick = () => {
         @click="handleClick()" 
         :class="[
             'inline-flex justify-center items-center gap-3',
-            'py-[6px] md:py-[12px] pl-5',
+            'py-[6px] md:py-[10px] pl-5',
             icon ? 'pr-2.5' : 'pr-5',
             'rounded-full border-none cursor-pointer',
             

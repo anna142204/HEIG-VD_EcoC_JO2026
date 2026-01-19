@@ -32,15 +32,15 @@ const props = defineProps({
 </script>
 
 <template>
-    <article class="flex flex-col items-start w-full">
+    <article class="flex flex-col items-start w-full max-w-sm">
         <BaseImg
             :src="img.src"
             :alt="img.alt"
-            wrapperClass="h-[200px] md:h-[250px] w-full rounded-[15px] overflow-hidden"
-            imgClass="w-full h-full object-cover"
+            wrapperClass="aspect-video w-full rounded-t-2xl overflow-hidden"
+            imgClass="w-full h-full object-cover object-top"
         />
-        <div>
-            <h3 class="text-[18px] md:text-[20px] font-semibold text-black break-words w-full">
+        <div class="bg-white flex flex-col gap-5 items-start p-5 rounded-b-2xl w-full">
+            <h3 class="text-2xl font-semibold text-black break-words w-full overflow-hidden text-ellipsis">
                 {{ title }}
             </h3>
             <BaseButton
@@ -48,7 +48,6 @@ const props = defineProps({
                 :url="button.url"
                 :inverted="button.inverted"
                 :icon="button.icon"
-                class="mt-4"
             />
         </div>  
     </article>

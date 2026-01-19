@@ -1,12 +1,12 @@
 [
     {
-        "title": "Collection mascotte",
+        "title": "Tina & Milo Collection",
         "img": {
             "src": "/images/boutique1.avif",
             "alt": "Macottes des JO 2026"
         },
         "button": {
-            "text": "Acheter",
+            "text": "Achetez",
             "url": "https://shop.olympics.com/fr/milano-cortina-2026/mascot-collection/t-13364516+c-1223135966+z-98-1285011308?_s=bm-fi-olympic-shop-prtsite-GTWA-homepage-carousel-140925-am&loc=fr-FR",
             "inverted": false,
             "icon": {
@@ -23,7 +23,7 @@
             "alt": "Vêtements des JO 2026"
         },
         "button": {
-            "text": "Acheter",
+            "text": "Achetez",
             "url": "https://shop.olympics.com/milano-cortina-2026/t-35589049+z-9774796-1238555770?_s=bm-fi-olympic-shop-prtsite-GTWA-homepage-carousel-140925-am&loc=fr-FR&query=milano%20cortina&sortOption=NewestArrivals",
             "inverted": false,
             "icon": {
@@ -34,13 +34,13 @@
         }
     },
     {
-        "title": "Accesoires",
+        "title": "Accessoires",
         "img": {
             "src": "/images/boutique3.avif",
-            "alt": "Accesoires des JO 2026"
+            "alt": "Accessoires des JO 2026"
         },
         "button": {
-            "text": "Acheter",
+            "text": "Achetez",
             "url": "https://shop.olympics.com/fr/milano-cortina-2026/collectibles-and-memorabilia/t-46146727+d-19558893+z-971-3390822431?_s=bm-fi-olympic-shop-prtsite-GTWA-homepage-carousel-140925-am&loc=fr-FR",
             "inverted": false,
             "icon": {
@@ -51,14 +51,14 @@
         }
     },
     {
-        "title": "Salomon",
+        "title": "Posters",
         "img": {
             "src": "/images/boutique4.avif",
-            "alt": "Collection Salomon des JO 2026"
+            "alt": "Posters des JO 2026"
         },
         "button": {
-            "text": "Acheter",
-            "url": "https://shop.olympics.com/?_ref=p-TLP%3Am-SEARCH&loc=fr-FR&query=salomon&_s=bm-fi-prtsite-MICO26-homepage-carousel-salomon-181225-fv",
+            "text": "Achetez",
+            "url": "https://shop.olympics.com/fr/milano-cortina-2026/posters/t-57699371+d-19119026+z-93-2531530063?_s=bm-fi-olympic-shop-prtsite-GTWA-homepage-carousel-140925-am&loc=fr-FR",
             "inverted": false,
             "icon": {
                 "title": "ph:arrow-right",
