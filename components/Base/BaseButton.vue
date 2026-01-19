@@ -11,6 +11,8 @@ const props = defineProps({
 
 const { navigateTo } = useNavigation()
 
+const isIconOnly = !props.text || props.text.trim() === ''
+
 const handleClick = () => {
     navigateTo(props.url)
 }
@@ -21,21 +23,21 @@ const handleClick = () => {
     <button 
         @click="handleClick()" 
         :class="[
-            'inline-flex justify-center items-center gap-3',
-            'py-[6px] md:py-[12px] pl-5',
-            icon ? 'pr-2.5' : 'pr-5',
-            'rounded-full border-none cursor-pointer',
-            
-            'font-[Poppins] font-normal',
-            'text-[1rem] md:text-[1.125rem]',
-            'transition-all duration-200 ease-out',
-
+            'inline-flex justify-center items-center border-none cursor-pointer',
+            'rounded-full transition-all duration-200 ease-out',
+            isIconOnly 
+                ? 'p-2.5' 
+                : [
+                    'gap-3 py-[6px] md:py-[10px] pl-5',
+                    icon ? 'pr-2.5' : 'pr-5',
+                    'font-[Poppins] font-normal text-[1rem] md:text-[1.125rem]'
+                ],
             inverted 
                 ? 'bg-white text-[var(--color-blue)] hover:bg-[var(--color-light-green)]' 
                 : 'text-white bg-custom-gradient'
         ]"
     >
-        <span>{{ text }}</span>
+        <span v-if="!isIconOnly">{{ text }}</span>
         <BaseIcon v-if="icon" v-bind="icon"/>
     </button>
   </div>
