@@ -45,6 +45,7 @@ const next = () => {
                     :alt="currentElement.img.alt"
                     wrapperClass="absolute inset-0 w-full h-full z-0"
                     imgClass="object-cover w-full h-full"
+                    preset="hero"
                 />
             </div>
         </transition>

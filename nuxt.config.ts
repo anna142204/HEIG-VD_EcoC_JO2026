@@ -15,14 +15,38 @@ export default defineNuxtConfig({
         collections: ['lucide']
       }
   }], ['@nuxt/image', {
-      format: ['webp', 'avif'],
-      quality: 75,
+      provider: 'ipx',
+      quality: 80,
+      screens: {
+        xs: 320,
+        sm: 640,
+        md: 768,
+        lg: 1024,
+        xl: 1280,
+        xxl: 1536
+      },
       densities: [1, 2],
       presets: {
-        default: {
+        card: {
           modifiers: {
-            format: 'webp',
-            quality: '75'
+            format: 'avif',
+            quality: 80,
+            width: 384,
+            height: 216
+          }
+        },
+        hero: {
+          modifiers: {
+            format: 'avif',
+            quality: 85,
+            width: 1920
+          }
+        },
+        logo: {
+          modifiers: {
+            format: 'avif',
+            quality: 90,
+            width: 200
           }
         }
       }

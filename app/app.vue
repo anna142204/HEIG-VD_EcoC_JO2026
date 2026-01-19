@@ -44,7 +44,7 @@ import FooterView from '../views/FooterView.vue';
       :title="banners[1].title"
       :img="banners[1].img"
       :button="banners[1].button"
-      presented-by="/images/presented_by.png"
+      presented-by="/images/presented_by.avif"
     />
     <BaseCTACard
       :title="cta[2].title"

@@ -3,7 +3,7 @@
         "title": "Programme de la Coupe du monde à Courchevel",
         "category": "Ski-Alpinisme",
         "img": {
-            "src": "/images/article1.jpeg",
+            "src": "/images/article1.avif",
             "alt": "Emily Harrop",
             "copyright": "Getty Images"
         },
@@ -13,7 +13,7 @@
         "title": "Avec Andrea Bocelli et Mariah Carey, quels artistes à la cérémonie d'ouverture des JO 2026 ?",
         "category": "",
         "img": {
-            "src": "/images/article2.jpeg",
+            "src": "/images/article2.avif",
             "alt": "Andrea Bocelli, Laura Pausini et Mariah Carey",
             "copyright": "Getty images"
         },
@@ -23,7 +23,7 @@
         "title": "Les courses du jour à Ruhpolding",
         "category": "Biathlon",
         "img": {
-            "src": "/images/article3.jpeg",
+            "src": "/images/article3.avif",
             "alt": "Course à Oberhof",
             "copyright": "Svoboda/IBU"
         },

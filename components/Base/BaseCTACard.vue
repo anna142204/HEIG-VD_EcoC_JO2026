@@ -48,6 +48,7 @@ const props = defineProps({
                 :alt="img.alt"
                 wrapperClass="w-full h-full rounded-[0.9375rem] overflow-hidden"
                 imgClass="w-full h-full object-cover rounded-[0.9375rem]"
+                preset="hero"
             />
         </div>
         <div class="flex flex-col gap-6 md:gap-[2.1875rem] items-start flex-shrink-0 w-full md:w-[36.25rem]">
