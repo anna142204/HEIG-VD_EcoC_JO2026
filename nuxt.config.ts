@@ -5,16 +5,25 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
+  nitro: {
+    preset: 'netlify'
+  },
+
   css: [
-    '~/assets/css/variables.css' 
+    '~/assets/css/variables.css'
   ],
 
-  modules: ['@nuxtjs/tailwindcss', ['@nuxt/icon', {
-      mode: 'svg', 
+  modules: [
+    '@nuxtjs/tailwindcss',
+
+    ['@nuxt/icon', {
+      mode: 'svg',
       serverBundle: {
         collections: ['lucide']
       }
-  }], ['@nuxt/image', {
+    }],
+
+    ['@nuxt/image', {
       provider: 'ipx',
       quality: 80,
       screens: {
@@ -50,12 +59,13 @@ export default defineNuxtConfig({
           }
         }
       }
-  }], '@nuxt/icon'],
+    }]
+  ],
 
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+      autoprefixer: {}
+    }
+  }
 })
