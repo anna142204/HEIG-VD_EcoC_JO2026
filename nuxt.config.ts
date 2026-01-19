@@ -5,10 +5,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
-  nitro: {
-    preset: 'netlify'
-  },
-
   css: [
     '~/assets/css/variables.css'
   ],
