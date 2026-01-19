@@ -6,13 +6,13 @@ import TheFooter from '../components/The/TheFooter.vue';
 </script>
 
 <template>
-  <div class="flex flex-col w-full relative z-50 gap-8">
-    <TheBottomNavBar 
+  <div class="flex flex-col w-full bg-[var(--color-blue)] relative z-50">
+    <TheFooter/>
+    <div class="flex flex-col md:gap-5">
+      <TheBottomNavBar 
       :navigation="footerData.navItems"
       :socials="footerData.socials"
     />
-    <TheFooter/>
-    <div class="flex flex-col md:gap-5">
     <TheBottomBar
       :text="footerData.bottomBar"
       :links="footerData.bottomBarLinks"
