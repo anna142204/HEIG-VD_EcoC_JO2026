@@ -42,6 +42,7 @@ const props = defineProps({
             :alt="img.alt"
             wrapperClass="aspect-video w-full rounded-t-2xl overflow-hidden bg-gradient-card"
             :imgClass="imgClass"
+            preset="card"
         />
         <div class="bg-white flex flex-col items-end p-5 rounded-b-2xl w-full flex-1">
             <h3 class="text-2xl font-semibold text-black break-words w-full line-clamp-2 min-h-[3.5rem]">

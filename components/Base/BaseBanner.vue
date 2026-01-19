@@ -43,6 +43,7 @@ const props = defineProps({
                     :alt="img.alt"
                     wrapperClass="h-full w-full"
                     imgClass="h-full w-full object-cover"
+                    preset="hero"
                 />
             </div>
             
@@ -62,6 +63,7 @@ const props = defineProps({
                         alt="sponsors"
                         wrapperClass="h-[1.3125rem] w-[7.125rem]"
                         imgClass="h-full w-full object-cover"
+                        preset="logo"
                     />
                 </div>
                 

@@ -2,7 +2,7 @@
     {
         "txt": "En savoir plus sur les sports olympiques d'hiver avec les Explications des sports", 
         "img": {
-            "src": "/images/hero1.jpeg",
+            "src": "/images/hero1.avif",
             "alt": "Allianz illustration"
         },
         "button": {
@@ -19,7 +19,7 @@
     {
         "txt": "Débloquez l'accès privilégié à Milano Cortina 2026", 
         "img": {
-            "src": "/images/hero2.jpeg",
+            "src": "/images/hero2.avif",
             "alt": "Iceskating illustration"
         },
         "button": {
@@ -36,7 +36,7 @@
     {
         "txt": "Votre guide ultime de cadeaux est arrivé", 
         "img": {
-            "src": "/images/hero3.jpeg",
+            "src": "/images/hero3.avif",
             "alt": "Boutique illustration"
         },
         "button": {

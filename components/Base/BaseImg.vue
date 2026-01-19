@@ -16,6 +16,10 @@ const props = defineProps({
         type: String,
         default: ""
     },
+    preset: {
+        type: String,
+        default: undefined
+    },
     copyright: {
         type: String,
         default: ""
@@ -29,7 +33,8 @@ const props = defineProps({
         v-if="typeof src === 'string' && src.length > 0"
         :src="src"
         :alt="alt"
-        :class="imgClass"/>
+        :class="imgClass"
+        :preset="preset"/>
     <div v-if="copyright" class="">{{ copyright }}</div>
   </div>
 </template>

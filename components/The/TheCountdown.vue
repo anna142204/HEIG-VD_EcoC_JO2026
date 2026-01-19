@@ -39,9 +39,10 @@ const days = Math.ceil(deltaTime / (24 * 3600 * 1000));
 
             <div class="shrink-0">
                 <BaseImg 
-                    src="/images/omega.png" 
+                    src="/images/omega.avif" 
                     alt="Logo Omega - Chronométreur Officiel" 
                     imgClass="h-auto w-[80px] md:w-[100px] object-contain"
+                    preset="logo"
                 />
             </div>
 
