@@ -15,8 +15,17 @@ export default defineNuxtConfig({
         collections: ['lucide']
       }
   }], ['@nuxt/image', {
-      format: ['webp'],
-      quality: 80,
+      format: ['webp', 'avif'],
+      quality: 75,
+      densities: [1, 2],
+      presets: {
+        default: {
+          modifiers: {
+            format: 'webp',
+            quality: '75'
+          }
+        }
+      }
   }], '@nuxt/icon'],
 
   postcss: {
